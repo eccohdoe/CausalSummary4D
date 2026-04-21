@@ -1,0 +1,15 @@
+{
+  "best_val_video_acc1": 0.7811447811447811,
+  "best_epoch": 10,
+  "final_val_video_acc1": 0.7643097643097643,
+  "final_val_clip_acc1": 53.43647723853866,
+  "total_time_sec": 230.82011485099792,
+  "epochs": 12,
+  "causality": {
+    "checked_samples": 8,
+    "max_abs_logit_diff": 0.0,
+    "mean_abs_logit_diff": 0.0,
+    "tolerance": 1e-06,
+    "passed": true
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "checkpoint": "outputs/full_causal_psd/checkpoint_best.pth",
+  "train_size": 8745,
+  "val_size": 10083,
+  "feature_stats": {
+    "pooled_final": {
+      "dim": 128,
+      "mean_abs": 0.7421289682388306,
+      "std_mean": 0.8197757005691528,
+      "std_min": 0.21440672874450684
+    },
+    "summary_final": {
+      "dim": 128,
+      "mean_abs": 0.6905726194381714,
+      "std_mean": 0.11007080972194672,
+      "std_min": 0.07652762532234192
+    }
+  },
+  "predictability": {
+    "summary_pred_mse_h1_checkpoint_train": 0.0038700237256789494,
+    "summary_pred_mse_h1_checkpoint_val": 0.004482306799375028
+  },
+  "classification": {
+    "pooled_final": {
+      "linear": {
+        "epoch": 17,
+        "best_val_video_acc": 0.7104377104377104,
+        "best_val_clip_acc": 0.4768421947956085,
+        "best_val_loss": 2.2427778244018555,
+        "train_clip_acc": 0.7881075143814087
+      },
+      "mlp": {
+        "epoch": 2,
+        "best_val_video_acc": 0.7575757575757576,
+        "best_val_clip_acc": 0.5011405348777771,
+        "best_val_loss": 2.6665260791778564,
+        "train_clip_acc": 0.8905660510063171
+      }
+    },
+    "summary_final": {
+      "linear": {
+        "epoch": 19,
+        "best_val_video_acc": 0.7407407407407407,
+        "best_val_clip_acc": 0.4604780375957489,
+        "best_val_loss": 1.7959789037704468,
+        "train_clip_acc": 0.5814751386642456
+      },
+      "mlp": {
+        "epoch": 17,
+        "best_val_video_acc": 0.7441077441077442,
+        "best_val_clip_acc": 0.47535455226898193,
+        "best_val_loss": 2.3039228916168213,
+        "train_clip_acc": 0.7667238712310791
+      }
+    }
+  },
+  "delta_regression": {
+    "pooled_state": {
+      "linear": {
+        "epoch": 2,
+        "best_val_mse": 0.21800120174884796,
+        "train_mse": 0.20203447341918945
+      },
+      "mlp": {
+        "epoch": 12,
+        "best_val_mse": 0.205778107047081,
+        "train_mse": 0.17141284048557281
+      }
+    },
+    "summary": {
+      "linear": {
+        "epoch": 9,
+        "best_val_mse": 0.003919955808669329,
+        "train_mse": 0.0033654971048235893
+      },
+      "mlp": {
+        "epoch": 8,
+        "best_val_mse": 0.0036176610738039017,
+        "train_mse": 0.002963550155982375
+      }
+    }
+  }
+}

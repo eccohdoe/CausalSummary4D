@@ -1,0 +1,6 @@
+| Seed | C-A best val delta (pp) | C-A summary probe delta (pp) | C-A pooled probe delta (pp) |
+| --- | --- | --- | --- |
+| 0 | -0.67 | 2.36 | -1.68 |
+| 1 | 3.37 | 10.44 | 4.04 |
+| 2 | 0.00 | 0.67 | 0.67 |
+| mean | 0.90 | 4.49 | 1.01 |

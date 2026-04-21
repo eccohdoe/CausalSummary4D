@@ -1,0 +1,7 @@
+Method,Seed,Best val video acc,Final val video acc,Best epoch,Causality,Summary probe acc,Pooled probe acc,Summary delta MSE,Pooled delta MSE,Projected pooled-target delta MSE,summary_std,summary_std_min,slot_corr,slot_max_corr
+Old target,0,78.79,76.09,10,pass,72.39,79.12,0.002,0.1951,-,0.7358,0.7145,0.0196,0.1001
+Old target,1,76.77,75.76,8,pass,71.04,73.06,0.0017,0.1879,-,0.7376,0.7181,0.0155,0.0795
+Old target,2,78.11,76.43,9,pass,74.07,76.09,0.0037,0.1931,-,0.7386,0.7071,0.02,0.1272
+Task-aligned target,0,78.11,78.11,11,pass,74.75,77.44,0.2586,0.2062,0.003,0.9402,0.8128,0.0761,0.4121
+Task-aligned target,1,80.13,78.79,9,pass,81.48,77.10,0.2718,0.2077,0.002,0.9373,0.8066,0.0793,0.4179
+Task-aligned target,2,78.11,76.43,10,pass,74.75,76.77,0.2193,0.1753,0.0018,0.9392,0.8033,0.0726,0.395

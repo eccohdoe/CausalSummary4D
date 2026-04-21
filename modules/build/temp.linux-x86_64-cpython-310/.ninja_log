@@ -1,0 +1,10 @@
+# ninja log v5
+1	9270	1775982878095757496	/srv/disk00/xiaoql26.from.denali-3/xiaoql26/lxq_new/worknew/Mr/Mamba4D/modules/build/temp.linux-x86_64-cpython-310/_ext_src/src/group_points.o	76fb7b624320a2ea
+2	9351	1775982878184756267	/srv/disk00/xiaoql26.from.denali-3/xiaoql26/lxq_new/worknew/Mr/Mamba4D/modules/build/temp.linux-x86_64-cpython-310/_ext_src/src/interpolate.o	9171ab677b6f6497
+1	9379	1775982878213755866	/srv/disk00/xiaoql26.from.denali-3/xiaoql26/lxq_new/worknew/Mr/Mamba4D/modules/build/temp.linux-x86_64-cpython-310/_ext_src/src/bindings.o	98b6f1c5be9534ff
+3	9497	1775982878326754305	/srv/disk00/xiaoql26.from.denali-3/xiaoql26/lxq_new/worknew/Mr/Mamba4D/modules/build/temp.linux-x86_64-cpython-310/_ext_src/src/sampling.o	b444e632b0cf652c
+1	9796	1775982878626750162	/srv/disk00/xiaoql26.from.denali-3/xiaoql26/lxq_new/worknew/Mr/Mamba4D/modules/build/temp.linux-x86_64-cpython-310/_ext_src/src/ball_query.o	5221c89c360b71c8
+1	11162	1775982879983731421	/srv/disk00/xiaoql26.from.denali-3/xiaoql26/lxq_new/worknew/Mr/Mamba4D/modules/build/temp.linux-x86_64-cpython-310/_ext_src/src/ball_query_gpu.o	2cdcaa0f849a7d49
+2	11189	1775982880010731048	/srv/disk00/xiaoql26.from.denali-3/xiaoql26/lxq_new/worknew/Mr/Mamba4D/modules/build/temp.linux-x86_64-cpython-310/_ext_src/src/group_points_gpu.o	5160aa0a52311cb5
+2	11240	1775982880062730330	/srv/disk00/xiaoql26.from.denali-3/xiaoql26/lxq_new/worknew/Mr/Mamba4D/modules/build/temp.linux-x86_64-cpython-310/_ext_src/src/interpolate_gpu.o	aa24e4378ed85909
+3	11443	1775982880256727651	/srv/disk00/xiaoql26.from.denali-3/xiaoql26/lxq_new/worknew/Mr/Mamba4D/modules/build/temp.linux-x86_64-cpython-310/_ext_src/src/sampling_gpu.o	33d4ffa0380f259

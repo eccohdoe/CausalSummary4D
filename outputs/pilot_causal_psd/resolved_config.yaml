@@ -1,0 +1,69 @@
+seed: 0
+output_dir: outputs/pilot_causal_psd
+device: cuda
+data:
+  path: /home/xiaoql26/dtank_disk01/xiaoql26.from.denali-3/xiaoql26/lxq_new/datanew/processed_data
+  clip_len: 8
+  frame_interval: 1
+  num_points: 512
+  train_subset_size: 1024
+  val_subset_size: 512
+model:
+  name: MAMBA4D_CausalPSD
+  radius: 0.7
+  nsamples: 16
+  spatial_stride: 32
+  temporal_kernel_size: 3
+  temporal_stride: 1
+  emb_relu: false
+  dim: 128
+  mlp_dim: 256
+  depth_mamba_inter: 2
+  depth_mamba_intra: 2
+  rms_norm: false
+  drop_out_in_block: 0.0
+  drop_path: 0.0
+  intra: false
+  strict_causal: true
+  point_order: x
+  psd:
+    enable: true
+    num_slots: 4
+    slot_dim: 32
+    horizons:
+    - 1
+    - 2
+    - 4
+    predictor_type: mlp
+    predictor_hidden_dim: 64
+    predictor_layers: 1
+    predictor_heads: 4
+    summary_hidden_dim: 128
+    dropout: 0.0
+    reg_type: var_cov
+    reg_var_target: 1.0
+    reg_cov_weight: 1.0
+    reg_sig_floor: 0.25
+    reg_sig_uniform_weight: 0.1
+loss:
+  lambda_pred: 1.0
+  lambda_reg: 0.1
+  lambda_div: 0.05
+train:
+  batch_size: 8
+  epochs: 12
+  workers: 2
+  lr: 0.01
+  momentum: 0.9
+  weight_decay: 0.0001
+  lr_milestones:
+  - 8
+  - 10
+  lr_gamma: 0.1
+  lr_warmup_epochs: 0
+  print_freq: 40
+eval:
+  run_causality_check: true
+  causality_num_samples: 4
+  causality_tolerance: 1.0e-06
+resume: null

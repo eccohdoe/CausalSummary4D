@@ -1,0 +1,84 @@
+{
+  "checkpoint": "outputs/round3_A_oldtarget_pilot/checkpoint_best.pth",
+  "train_size": 1024,
+  "val_size": 512,
+  "feature_stats": {
+    "pooled_final": {
+      "dim": 128,
+      "mean_abs": 0.7373721599578857,
+      "std_mean": 0.671867311000824,
+      "std_min": 0.22577804327011108
+    },
+    "summary_final": {
+      "dim": 128,
+      "mean_abs": 0.7759287357330322,
+      "std_mean": 0.27758967876434326,
+      "std_min": 0.14636605978012085
+    }
+  },
+  "predictability": {
+    "checkpoint_pred_target": "summary",
+    "pred_target_mse_h1_checkpoint_train": 0.01640343846520409,
+    "pred_target_mse_h1_checkpoint_val": 0.014334325329400599
+  },
+  "classification": {
+    "pooled_final": {
+      "linear": {
+        "epoch": 16,
+        "best_val_video_acc": 0.4051724137931034,
+        "best_val_clip_acc": 0.291015625,
+        "best_val_loss": 2.3233184814453125,
+        "train_clip_acc": 0.5185546875
+      },
+      "mlp": {
+        "epoch": 11,
+        "best_val_video_acc": 0.4482758620689655,
+        "best_val_clip_acc": 0.333984375,
+        "best_val_loss": 2.845567464828491,
+        "train_clip_acc": 0.763671875
+      }
+    },
+    "summary_final": {
+      "linear": {
+        "epoch": 17,
+        "best_val_video_acc": 0.3879310344827586,
+        "best_val_clip_acc": 0.2578125,
+        "best_val_loss": 2.301581859588623,
+        "train_clip_acc": 0.39453125
+      },
+      "mlp": {
+        "epoch": 12,
+        "best_val_video_acc": 0.3793103448275862,
+        "best_val_clip_acc": 0.296875,
+        "best_val_loss": 2.2938621044158936,
+        "train_clip_acc": 0.4658203125
+      }
+    }
+  },
+  "delta_regression": {
+    "pooled_state": {
+      "linear": {
+        "epoch": 13,
+        "best_val_mse": 0.1210901215672493,
+        "train_mse": 0.11871118098497391
+      },
+      "mlp": {
+        "epoch": 9,
+        "best_val_mse": 0.12206254154443741,
+        "train_mse": 0.10474489629268646
+      }
+    },
+    "summary": {
+      "linear": {
+        "epoch": 11,
+        "best_val_mse": 0.012140677310526371,
+        "train_mse": 0.013386474922299385
+      },
+      "mlp": {
+        "epoch": 9,
+        "best_val_mse": 0.011676422320306301,
+        "train_mse": 0.012634140439331532
+      }
+    }
+  }
+}

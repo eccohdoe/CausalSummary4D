@@ -1,0 +1,102 @@
+{
+  "checkpoint": "outputs/round5_C_tasktarget_full_matched_seed2/checkpoint_best.pth",
+  "train_size": 8745,
+  "val_size": 10083,
+  "feature_stats": {
+    "pooled_final": {
+      "dim": 128,
+      "mean_abs": 0.7421138882637024,
+      "std_mean": 0.8291778564453125,
+      "std_min": 0.23496520519256592
+    },
+    "summary_final": {
+      "dim": 128,
+      "mean_abs": 0.7924336194992065,
+      "std_mean": 0.8918880820274353,
+      "std_min": 0.5319939851760864
+    },
+    "projected_pooled_target": {
+      "dim": 128,
+      "mean_abs": 0.7354004383087158,
+      "std_mean": 0.08728624135255814,
+      "std_min": 0.05951041355729103
+    }
+  },
+  "predictability": {
+    "checkpoint_pred_target": "projected_pooled_target",
+    "pred_target_mse_h1_checkpoint_train": 0.0033034028650488836,
+    "pred_target_mse_h1_checkpoint_val": 0.00355845817385904
+  },
+  "classification": {
+    "pooled_final": {
+      "linear": {
+        "epoch": 19,
+        "best_val_video_acc": 0.7373737373737373,
+        "best_val_clip_acc": 0.4916195571422577,
+        "best_val_loss": 2.245668649673462,
+        "train_clip_acc": 0.815437376499176
+      },
+      "mlp": {
+        "epoch": 15,
+        "best_val_video_acc": 0.7676767676767676,
+        "best_val_clip_acc": 0.5175046920776367,
+        "best_val_loss": 5.930426597595215,
+        "train_clip_acc": 0.998627781867981
+      }
+    },
+    "summary_final": {
+      "linear": {
+        "epoch": 12,
+        "best_val_video_acc": 0.696969696969697,
+        "best_val_clip_acc": 0.48031339049339294,
+        "best_val_loss": 2.164860486984253,
+        "train_clip_acc": 0.7658090591430664
+      },
+      "mlp": {
+        "epoch": 3,
+        "best_val_video_acc": 0.7474747474747475,
+        "best_val_clip_acc": 0.5064960718154907,
+        "best_val_loss": 2.750762701034546,
+        "train_clip_acc": 0.8896512389183044
+      }
+    }
+  },
+  "delta_regression": {
+    "pooled_state": {
+      "linear": {
+        "epoch": 10,
+        "best_val_mse": 0.1903401017189026,
+        "train_mse": 0.18299545347690582
+      },
+      "mlp": {
+        "epoch": 14,
+        "best_val_mse": 0.17532283067703247,
+        "train_mse": 0.153150275349617
+      }
+    },
+    "summary": {
+      "linear": {
+        "epoch": 5,
+        "best_val_mse": 0.23390956223011017,
+        "train_mse": 0.23569118976593018
+      },
+      "mlp": {
+        "epoch": 10,
+        "best_val_mse": 0.2193327397108078,
+        "train_mse": 0.20040592551231384
+      }
+    },
+    "projected_pooled_target": {
+      "linear": {
+        "epoch": 10,
+        "best_val_mse": 0.0020773636642843485,
+        "train_mse": 0.0017855861224234104
+      },
+      "mlp": {
+        "epoch": 14,
+        "best_val_mse": 0.0018021094147115946,
+        "train_mse": 0.0014948062598705292
+      }
+    }
+  }
+}

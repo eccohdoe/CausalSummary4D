@@ -1,0 +1,83 @@
+{
+  "checkpoint": "outputs/round2_old_no_sem_pilot/checkpoint_best.pth",
+  "train_size": 1024,
+  "val_size": 512,
+  "feature_stats": {
+    "pooled_final": {
+      "dim": 128,
+      "mean_abs": 0.7379589676856995,
+      "std_mean": 0.6808385252952576,
+      "std_min": 0.23633162677288055
+    },
+    "summary_final": {
+      "dim": 128,
+      "mean_abs": 0.773766815662384,
+      "std_mean": 0.2912374436855316,
+      "std_min": 0.1501731276512146
+    }
+  },
+  "predictability": {
+    "summary_pred_mse_h1_checkpoint_train": 0.018332151579670608,
+    "summary_pred_mse_h1_checkpoint_val": 0.016670169192366302
+  },
+  "classification": {
+    "pooled_final": {
+      "linear": {
+        "epoch": 16,
+        "best_val_video_acc": 0.3922413793103448,
+        "best_val_clip_acc": 0.28515625,
+        "best_val_loss": 2.3286240100860596,
+        "train_clip_acc": 0.53515625
+      },
+      "mlp": {
+        "epoch": 19,
+        "best_val_video_acc": 0.41379310344827586,
+        "best_val_clip_acc": 0.318359375,
+        "best_val_loss": 3.450082302093506,
+        "train_clip_acc": 0.91796875
+      }
+    },
+    "summary_final": {
+      "linear": {
+        "epoch": 17,
+        "best_val_video_acc": 0.39655172413793105,
+        "best_val_clip_acc": 0.267578125,
+        "best_val_loss": 2.2874863147735596,
+        "train_clip_acc": 0.4091796875
+      },
+      "mlp": {
+        "epoch": 18,
+        "best_val_video_acc": 0.4396551724137931,
+        "best_val_clip_acc": 0.32421875,
+        "best_val_loss": 2.350006103515625,
+        "train_clip_acc": 0.5498046875
+      }
+    }
+  },
+  "delta_regression": {
+    "pooled_state": {
+      "linear": {
+        "epoch": 10,
+        "best_val_mse": 0.12663142383098602,
+        "train_mse": 0.124216727912426
+      },
+      "mlp": {
+        "epoch": 7,
+        "best_val_mse": 0.12757262587547302,
+        "train_mse": 0.11046220362186432
+      }
+    },
+    "summary": {
+      "linear": {
+        "epoch": 14,
+        "best_val_mse": 0.014144484885036945,
+        "train_mse": 0.014664294198155403
+      },
+      "mlp": {
+        "epoch": 14,
+        "best_val_mse": 0.01352608297020197,
+        "train_mse": 0.013361950404942036
+      }
+    }
+  }
+}

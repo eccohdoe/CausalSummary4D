@@ -1,0 +1,202 @@
+{
+  "entries_by_method": {
+    "A": [
+      {
+        "seed": 0,
+        "method": "A",
+        "run_dir": "outputs/round4_A_oldtarget_full_matched",
+        "probe_path": "outputs/round4_A_oldtarget_full_matched_probe/probe_summary_alignment.json",
+        "best_val_video_acc1": 0.7878787878787878,
+        "final_val_video_acc1": 0.7609427609427609,
+        "best_epoch": 10,
+        "causality_passed": true,
+        "causality_max_abs_logit_diff": 0.0,
+        "summary_probe_acc": 0.7239057239057239,
+        "pooled_probe_acc": 0.7912457912457912,
+        "summary_delta_mse": 0.002010712865740061,
+        "pooled_delta_mse": 0.19508399069309235,
+        "projected_pooled_target_delta_mse": null,
+        "pred_target_mse_val": 0.0024849294734612397,
+        "summary_std": 0.7358415819282288,
+        "summary_std_min": 0.7145267083723322,
+        "slot_corr": 0.019591045955798744,
+        "slot_max_corr": 0.10014679861106864
+      },
+      {
+        "seed": 1,
+        "method": "A",
+        "run_dir": "outputs/round5_A_oldtarget_full_matched_seed1",
+        "probe_path": "outputs/round5_A_oldtarget_full_matched_seed1_probe/probe_summary_alignment.json",
+        "best_val_video_acc1": 0.7676767676767676,
+        "final_val_video_acc1": 0.7575757575757576,
+        "best_epoch": 8,
+        "causality_passed": true,
+        "causality_max_abs_logit_diff": 0.0,
+        "summary_probe_acc": 0.7104377104377104,
+        "pooled_probe_acc": 0.7306397306397306,
+        "summary_delta_mse": 0.0016528231790289283,
+        "pooled_delta_mse": 0.18785732984542847,
+        "projected_pooled_target_delta_mse": null,
+        "pred_target_mse_val": 0.0020742423734139512,
+        "summary_std": 0.7375827656149646,
+        "summary_std_min": 0.7180534291202015,
+        "slot_corr": 0.015467499681600324,
+        "slot_max_corr": 0.07950990707690145
+      },
+      {
+        "seed": 2,
+        "method": "A",
+        "run_dir": "outputs/round5_A_oldtarget_full_matched_seed2",
+        "probe_path": "outputs/round5_A_oldtarget_full_matched_seed2_probe/probe_summary_alignment.json",
+        "best_val_video_acc1": 0.7811447811447811,
+        "final_val_video_acc1": 0.7643097643097643,
+        "best_epoch": 9,
+        "causality_passed": true,
+        "causality_max_abs_logit_diff": 0.0,
+        "summary_probe_acc": 0.7407407407407407,
+        "pooled_probe_acc": 0.7609427609427609,
+        "summary_delta_mse": 0.0037397954147309065,
+        "pooled_delta_mse": 0.19314727187156677,
+        "projected_pooled_target_delta_mse": null,
+        "pred_target_mse_val": 0.004679791703206921,
+        "summary_std": 0.738622310773982,
+        "summary_std_min": 0.7071465267450762,
+        "slot_corr": 0.019995717777848462,
+        "slot_max_corr": 0.12715284968002732
+      }
+    ],
+    "C": [
+      {
+        "seed": 0,
+        "method": "C",
+        "run_dir": "outputs/round4_C_tasktarget_full_matched",
+        "probe_path": "outputs/round4_C_tasktarget_full_matched_probe/probe_summary_alignment.json",
+        "best_val_video_acc1": 0.7811447811447811,
+        "final_val_video_acc1": 0.7811447811447811,
+        "best_epoch": 11,
+        "causality_passed": true,
+        "causality_max_abs_logit_diff": 0.0,
+        "summary_probe_acc": 0.7474747474747475,
+        "pooled_probe_acc": 0.7744107744107744,
+        "summary_delta_mse": 0.25863921642303467,
+        "pooled_delta_mse": 0.20624056458473206,
+        "projected_pooled_target_delta_mse": 0.0029784413054585457,
+        "pred_target_mse_val": 0.0051196950343609755,
+        "summary_std": 0.9402448380233165,
+        "summary_std_min": 0.8128000407920677,
+        "slot_corr": 0.07606186123541003,
+        "slot_max_corr": 0.4121176029744488
+      },
+      {
+        "seed": 1,
+        "method": "C",
+        "run_dir": "outputs/round5_C_tasktarget_full_matched_seed1",
+        "probe_path": "outputs/round5_C_tasktarget_full_matched_seed1_probe/probe_summary_alignment.json",
+        "best_val_video_acc1": 0.8013468013468014,
+        "final_val_video_acc1": 0.7878787878787878,
+        "best_epoch": 9,
+        "causality_passed": true,
+        "causality_max_abs_logit_diff": 0.0,
+        "summary_probe_acc": 0.8148148148148148,
+        "pooled_probe_acc": 0.7710437710437711,
+        "summary_delta_mse": 0.2718362808227539,
+        "pooled_delta_mse": 0.2076631635427475,
+        "projected_pooled_target_delta_mse": 0.0019982389640063047,
+        "pred_target_mse_val": 0.003931768806038851,
+        "summary_std": 0.9373069225216261,
+        "summary_std_min": 0.8066160913141379,
+        "slot_corr": 0.07926476272112491,
+        "slot_max_corr": 0.4179091830848558
+      },
+      {
+        "seed": 2,
+        "method": "C",
+        "run_dir": "outputs/round5_C_tasktarget_full_matched_seed2",
+        "probe_path": "outputs/round5_C_tasktarget_full_matched_seed2_probe/probe_summary_alignment.json",
+        "best_val_video_acc1": 0.7811447811447811,
+        "final_val_video_acc1": 0.7643097643097643,
+        "best_epoch": 10,
+        "causality_passed": true,
+        "causality_max_abs_logit_diff": 0.0,
+        "summary_probe_acc": 0.7474747474747475,
+        "pooled_probe_acc": 0.7676767676767676,
+        "summary_delta_mse": 0.2193327397108078,
+        "pooled_delta_mse": 0.17532283067703247,
+        "projected_pooled_target_delta_mse": 0.0018021094147115946,
+        "pred_target_mse_val": 0.00355845817385904,
+        "summary_std": 0.9392091485329477,
+        "summary_std_min": 0.8032883994649054,
+        "slot_corr": 0.07257592014736841,
+        "slot_max_corr": 0.39496647456228406
+      }
+    ]
+  },
+  "aggregate_by_method": {
+    "A": {
+      "best_val_video_acc1_mean": 0.7789001122334456,
+      "best_val_video_acc1_std": 0.008398782012960598,
+      "final_val_video_acc1_mean": 0.7609427609427609,
+      "final_val_video_acc1_std": 0.002749146737130378,
+      "summary_probe_acc_mean": 0.7250280583613917,
+      "summary_probe_acc_std": 0.012396589244879068,
+      "pooled_probe_acc_mean": 0.7609427609427609,
+      "pooled_probe_acc_std": 0.024742320634173493,
+      "summary_delta_mse_mean": 0.0024677771531666317,
+      "pooled_delta_mse_mean": 0.19202953080336252,
+      "projected_pooled_target_delta_mse_mean": null,
+      "pred_target_mse_val_mean": 0.003079654516694037,
+      "summary_std_mean": 0.7373488861057251,
+      "summary_std_min_mean": 0.7132422214125367,
+      "slot_corr_mean": 0.018351421138415844,
+      "slot_max_corr_mean": 0.10226985178933247
+    },
+    "C": {
+      "best_val_video_acc1_mean": 0.7878787878787878,
+      "best_val_video_acc1_std": 0.009523323652344083,
+      "final_val_video_acc1_mean": 0.7777777777777778,
+      "final_val_video_acc1_std": 0.00991218952449815,
+      "summary_probe_acc_mean": 0.7699214365881033,
+      "summary_probe_acc_std": 0.03174441217448021,
+      "pooled_probe_acc_mean": 0.7710437710437711,
+      "pooled_probe_acc_std": 0.0027491467371304236,
+      "summary_delta_mse_mean": 0.24993607898553213,
+      "pooled_delta_mse_mean": 0.19640885293483734,
+      "projected_pooled_target_delta_mse_mean": 0.0022595965613921485,
+      "pred_target_mse_val_mean": 0.004203307338086289,
+      "summary_std_mean": 0.9389203030259634,
+      "summary_std_min_mean": 0.8075681771903703,
+      "slot_corr_mean": 0.07596751470130111,
+      "slot_max_corr_mean": 0.4083310868738629
+    }
+  },
+  "paired_deltas": [
+    {
+      "seed": 0,
+      "best_val_video_acc1_delta": -0.006734006734006703,
+      "summary_probe_delta": 0.023569023569023573,
+      "pooled_probe_delta": -0.01683501683501676
+    },
+    {
+      "seed": 1,
+      "best_val_video_acc1_delta": 0.03367003367003374,
+      "summary_probe_delta": 0.10437710437710435,
+      "pooled_probe_delta": 0.04040404040404044
+    },
+    {
+      "seed": 2,
+      "best_val_video_acc1_delta": 0.0,
+      "summary_probe_delta": 0.006734006734006814,
+      "pooled_probe_delta": 0.006734006734006703
+    }
+  ],
+  "figures": {
+    "main": [
+      "outputs/round5_paper_figures/round5_main_multiseed.png",
+      "outputs/round5_paper_figures/round5_main_multiseed.pdf"
+    ],
+    "probe": [
+      "outputs/round5_paper_figures/round5_probe_multiseed.png",
+      "outputs/round5_paper_figures/round5_probe_multiseed.pdf"
+    ]
+  }
+}

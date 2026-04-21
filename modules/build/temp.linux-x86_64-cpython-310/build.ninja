@@ -1,0 +1,45 @@
+ninja_required_version = 1.3
+cxx = c++
+nvcc = /usr/local/cuda/bin/nvcc
+
+cflags = -pthread -B /home/xiaoql26/dtank_disk00/lxq_new/envs/mamba4d_clean/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/xiaoql26/dtank_disk00/lxq_new/envs/mamba4d_clean/include -fPIC -O2 -isystem /home/xiaoql26/dtank_disk00/lxq_new/envs/mamba4d_clean/include -fPIC -I/home/xiaoql26/dtank_disk01/xiaoql26.from.denali-3/xiaoql26/lxq_new/envs/mamba4d_clean/lib/python3.10/site-packages/torch/include -I/home/xiaoql26/dtank_disk01/xiaoql26.from.denali-3/xiaoql26/lxq_new/envs/mamba4d_clean/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda/include -I/home/xiaoql26/dtank_disk01/xiaoql26.from.denali-3/xiaoql26/lxq_new/envs/mamba4d_clean/include/python3.10 -c
+post_cflags = -O2 -I/srv/disk00/xiaoql26.from.denali-3/xiaoql26/lxq_new/worknew/Mr/Mamba4D/modules/_ext_src/include -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=_ext -std=c++17
+cuda_cflags = -I/home/xiaoql26/dtank_disk01/xiaoql26.from.denali-3/xiaoql26/lxq_new/envs/mamba4d_clean/lib/python3.10/site-packages/torch/include -I/home/xiaoql26/dtank_disk01/xiaoql26.from.denali-3/xiaoql26/lxq_new/envs/mamba4d_clean/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda/include -I/home/xiaoql26/dtank_disk01/xiaoql26.from.denali-3/xiaoql26/lxq_new/envs/mamba4d_clean/include/python3.10 -c
+cuda_post_cflags = -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O2 -I/srv/disk00/xiaoql26.from.denali-3/xiaoql26/lxq_new/worknew/Mr/Mamba4D/modules/_ext_src/include -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=_ext -gencode=arch=compute_120,code=compute_120 -gencode=arch=compute_120,code=sm_120 -std=c++17
+cuda_dlink_post_cflags = 
+sycl_dlink_post_cflags = 
+ldflags = 
+
+rule compile
+  command = $cxx -MMD -MF $out.d $cflags -c $in -o $out $post_cflags
+  depfile = $out.d
+  deps = gcc
+
+rule cuda_compile
+  depfile = $out.d
+  deps = gcc
+  command = $nvcc --generate-dependencies-with-compile --dependency-output $out.d $cuda_cflags -c $in -o $out $cuda_post_cflags
+
+
+
+
+
+
+
+build /srv/disk00/xiaoql26.from.denali-3/xiaoql26/lxq_new/worknew/Mr/Mamba4D/modules/build/temp.linux-x86_64-cpython-310/_ext_src/src/ball_query.o: compile /srv/disk00/xiaoql26.from.denali-3/xiaoql26/lxq_new/worknew/Mr/Mamba4D/modules/_ext_src/src/ball_query.cpp
+build /srv/disk00/xiaoql26.from.denali-3/xiaoql26/lxq_new/worknew/Mr/Mamba4D/modules/build/temp.linux-x86_64-cpython-310/_ext_src/src/ball_query_gpu.o: cuda_compile /srv/disk00/xiaoql26.from.denali-3/xiaoql26/lxq_new/worknew/Mr/Mamba4D/modules/_ext_src/src/ball_query_gpu.cu
+build /srv/disk00/xiaoql26.from.denali-3/xiaoql26/lxq_new/worknew/Mr/Mamba4D/modules/build/temp.linux-x86_64-cpython-310/_ext_src/src/bindings.o: compile /srv/disk00/xiaoql26.from.denali-3/xiaoql26/lxq_new/worknew/Mr/Mamba4D/modules/_ext_src/src/bindings.cpp
+build /srv/disk00/xiaoql26.from.denali-3/xiaoql26/lxq_new/worknew/Mr/Mamba4D/modules/build/temp.linux-x86_64-cpython-310/_ext_src/src/group_points.o: compile /srv/disk00/xiaoql26.from.denali-3/xiaoql26/lxq_new/worknew/Mr/Mamba4D/modules/_ext_src/src/group_points.cpp
+build /srv/disk00/xiaoql26.from.denali-3/xiaoql26/lxq_new/worknew/Mr/Mamba4D/modules/build/temp.linux-x86_64-cpython-310/_ext_src/src/group_points_gpu.o: cuda_compile /srv/disk00/xiaoql26.from.denali-3/xiaoql26/lxq_new/worknew/Mr/Mamba4D/modules/_ext_src/src/group_points_gpu.cu
+build /srv/disk00/xiaoql26.from.denali-3/xiaoql26/lxq_new/worknew/Mr/Mamba4D/modules/build/temp.linux-x86_64-cpython-310/_ext_src/src/interpolate.o: compile /srv/disk00/xiaoql26.from.denali-3/xiaoql26/lxq_new/worknew/Mr/Mamba4D/modules/_ext_src/src/interpolate.cpp
+build /srv/disk00/xiaoql26.from.denali-3/xiaoql26/lxq_new/worknew/Mr/Mamba4D/modules/build/temp.linux-x86_64-cpython-310/_ext_src/src/interpolate_gpu.o: cuda_compile /srv/disk00/xiaoql26.from.denali-3/xiaoql26/lxq_new/worknew/Mr/Mamba4D/modules/_ext_src/src/interpolate_gpu.cu
+build /srv/disk00/xiaoql26.from.denali-3/xiaoql26/lxq_new/worknew/Mr/Mamba4D/modules/build/temp.linux-x86_64-cpython-310/_ext_src/src/sampling.o: compile /srv/disk00/xiaoql26.from.denali-3/xiaoql26/lxq_new/worknew/Mr/Mamba4D/modules/_ext_src/src/sampling.cpp
+build /srv/disk00/xiaoql26.from.denali-3/xiaoql26/lxq_new/worknew/Mr/Mamba4D/modules/build/temp.linux-x86_64-cpython-310/_ext_src/src/sampling_gpu.o: cuda_compile /srv/disk00/xiaoql26.from.denali-3/xiaoql26/lxq_new/worknew/Mr/Mamba4D/modules/_ext_src/src/sampling_gpu.cu
+
+
+
+
+
+
+
+
